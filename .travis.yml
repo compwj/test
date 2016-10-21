@@ -3,6 +3,6 @@ env:
     - "FTP_USER=qxu2058730456"
     - "FTP_PASSWORD=yijianjidian"
 after_success:
-    "curl --ftp-create-dirs -T readme.md -u $FTP_USER:$FTP_PASSWORD ftp://139.129.175.7/htdocs/myfile.md"
+    "curl --ftp-create-dirs -T readme.md -u $FTP_USER:$FTP_PASSWORD ftp://139.129.175.7/htdocs/"
 
 
