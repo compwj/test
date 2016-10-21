@@ -1,2 +1,7 @@
+language: node_js
+
+node_js:
+- '0.12'
+
 after_success:
     "find * -type f -exec curl --ftp-create-dirs -u $qxu2058730456:$yijianjidian -T {} ftp://139.129.175.7/htdocs/{} \\;"
