@@ -1,7 +1,9 @@
 language: php
 php:
   - 5.3
-  
+
+script: phpunit -v
+
 env:
   global:
     - "FTP_USER=qxu2058730456"
