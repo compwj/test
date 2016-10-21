@@ -1,7 +1,8 @@
-language: node_js
-
-node_js:
-- '0.12'
-
+env:
+  global:
+    - "FTP_USER=qxu2058730456"
+    - "FTP_PASSWORD=yijianjidian"
 after_success:
-    "find * -type f -exec curl --ftp-create-dirs -u $qxu2058730456:$yijianjidian -T {} ftp://139.129.175.7/htdocs/{} \\;"
+    "curl --ftp-create-dirs -T readme.md -u $FTP_USER:$FTP_PASSWORD ftp://139.129.175.7/htdocs/myfile.md"
+
+
